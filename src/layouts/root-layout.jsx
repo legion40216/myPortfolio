@@ -4,7 +4,7 @@ import Header from '../components/header-components/header'
 export default function RootLayout() {
   return (
 
-    <div className="container space-y-9 py-5">
+    <div className="container space-y-9 py-5 px-3">
         <Header/>
     
         <main>

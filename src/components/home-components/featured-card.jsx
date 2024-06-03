@@ -11,15 +11,15 @@ export default function FeaturedCard({
 }) {
   return (
     <div className="featured-card">
-      <div className='flex gap-4 justify-between'>
+      <div className='flex flex-col sm:flex-row gap-4 justify-between'>
   
-          <div className='grid place-items-center max-w-[220px] '>
+        <div className='flex items-center w-full sm:max-w-[220px] '>
           <div className='img-wrapper rounded overflow-hidden'>
               <a href={link ? link : "/"}  target="_blank" rel="noreferrer">
                 <img src={img} alt=""  />
               </a>
             </div>
-          </div>
+        </div>
           
         
 
@@ -42,24 +42,20 @@ export default function FeaturedCard({
                 ))
               }
             </div>
-              
           </div>
-          <div>
-      </div>
-  
 
-        <div className='flex flex-col gap-1'>
-        <a href={github ? github : "/"} target="_blank" rel="noreferrer">
-            <div className='p-1 bg-slate-800 hover:bg-slate-700  rounded'>
-                <Github className="h-5 w-5"/>
-            </div>
-        </a>
-        <a href={link ? link : "/"} target="_blank" rel="noreferrer">
-            <div className='p-1 bg-slate-800 hover:bg-slate-700  rounded'>
-            <Link className="h-5 w-5"/>
-            </div>
-        </a>
-      </div>
+        <div className='flex flex-row sm:flex-col gap-1'>
+          <a href={github ? github : "/"} target="_blank" rel="noreferrer">
+              <div className='p-1 bg-slate-800 hover:bg-slate-700  rounded'>
+                  <Github className="h-5 w-5"/>
+              </div>
+          </a>
+          <a href={link ? link : "/"} target="_blank" rel="noreferrer">
+              <div className='p-1 bg-slate-800 hover:bg-slate-700  rounded'>
+              <Link className="h-5 w-5"/>
+              </div>
+          </a>
+        </div>
       </div>
   </div>
   )

@@ -8,19 +8,19 @@ export default function Home() {
   return (
         
           <div className=" space-y-9">
-            <div className='flex gap-10 items-center'>
-            <div className=" space-y-4">
-                <div>
-                  <h1 className=" text-4xl font-bold">Suleman Lohar</h1>
-                  <p>Fullstack Developer</p>
-                </div>
-                <div>
-                  <p  className='text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus impedit ab provident quia laborum aut debitis suscipit porro 
-                    ipsum natus autem officia totam mollitia, animi amet officiis ratione dolor?
-                  </p>
-                </div>
-            </div>
-            <div className='rounded-full overflow-hidden'>
+            <div className='flex flex-col-reverse sm:flex-row gap-10 items-center'>
+              <div className=" space-y-4">
+                  <div>
+                    <h1 className=" text-4xl font-bold">Suleman Lohar</h1>
+                    <p>Fullstack Developer</p>
+                  </div>
+                  <div>
+                    <p  className='text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus impedit ab provident quia laborum aut debitis suscipit porro 
+                      ipsum natus autem officia totam mollitia, animi amet officiis ratione dolor?
+                    </p>
+                  </div>
+              </div>
+              <div className='rounded-full overflow-hidden w-full sm: max-w-[300px]'>
                 <img src="https://github.com/shadcn.png" alt="" />
               </div>
             </div>

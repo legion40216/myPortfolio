@@ -121,6 +121,49 @@ header nav li a {
  .img-wrapper:hover + .text-wrapper h4 {
   text-decoration: underline;
 }
+
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    display: flex;
+    justify-content: end;
+  }
+  
+}
+/*general*/
+
+.nav-bar {
+  @apply
+  flex 
+  items-center 
+  justify-between
+  }
+
+@media (max-width: 768px) {
+  .nav-bar {
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  gap: 1rem;
+  top: 40px;
+  width: 180px;
+  @apply
+  bg-slate-500
+  rounded-md
+  py-3
+  }
+
+  .nav-bar > nav > ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-bar[data-visible="true"] { 
+    display: flex;
+  }
+}
 /*general*/
 
 .grid-one-one_half{
