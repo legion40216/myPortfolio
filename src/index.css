@@ -1,13 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  @apply
+  text-white
+  bg-gray-950/95
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+p, span {
+ @apply
+ text-gray-300
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+/* utilites */
+
+.container-full {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+ /*components*/
+
+.navbar-layout {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+}
+
+.dashboard-layout {
+  display: grid;
+  grid-template-rows: min-content 1fr;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .dashboard-layout{
+    display: grid;
+    grid-template-columns: 210px 1fr;
+    grid-template-rows: min-content  1fr ;
+    min-height: 100vh;
+  }
+}
+
+.vertical-center {
+  top: 50%;
+  transform: translateY(-50%)
+  }
+
+.multiple-grid {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(160px, 1fr))
+}  
+
+header nav li a {
+  @apply
+  p-2
+  px-4
+  rounded
+  text-sm
+ }
+
+ header nav li a.active {
+  @apply 
+  bg-slate-600
+ }
+
+ .featured-card{
+  @apply
+  bg-slate-700 
+  hover:bg-slate-600
+  p-3 
+  rounded-md
+ }
+
+ .project-card {
+  @apply
+  bg-slate-700 
+  hover:bg-slate-600
+  p-2 
+  rounded-md
+ }
+
+  .tags{
+  @apply
+  p-1 
+  px-2 
+  rounded 
+ }
+
+
+ footer {
+  @apply 
+  border-t-[1px]
+  border-slate-400
+  pt-5
+ }
+
+ footer > div > a {
+  @apply
+  text-slate-400
+  hover:text-slate-300
+  text-sm
+  hover:underline
+ }
+
+ .img-wrapper:hover + .text-wrapper h4 {
+  text-decoration: underline;
+}
+/*general*/
+
+.grid-one-one_half{
+  display: grid;
+  grid-template-columns: 1fr 30%;
+}
+
+/* ------------------- */
+/* button     */
+/* ------------------- */
+
+ button[data-type = nav-button]
+{
+  @apply 
+  rounded-full 
+  shadow-sm 
+  hover:shadow-sm 
+  transition
+  py-3
+  px-4;
 }
