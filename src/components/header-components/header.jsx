@@ -40,8 +40,9 @@ export default function Header() {
           e.stopPropagation();
           setToggleNav(prev => !prev);
         }}
-        className=' block md:hidden p-2 rounded text-sm bg-blue-800 hover:bg-slate-700'
-      >
+        className=' block md:hidden p-2 rounded text-sm
+         bg-blue-800 hover:bg-slate-700'
+        >
         <Menu className="h-5 w-5"/>
       </button>
     </header>

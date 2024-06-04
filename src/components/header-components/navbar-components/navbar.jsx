@@ -7,9 +7,15 @@ export default function Navbar({
   return (
     <nav>
         <ul className="flex gap-5">
-            <li onClick={()=>{setToggleNav(prvious => (!prvious))}}><NavLink to ="/">Home</NavLink></li>
-            <li onClick={()=>{setToggleNav(prvious => (!prvious))}}><NavLink to ="project">Projects</NavLink></li>
-            <li onClick={()=>{setToggleNav(prvious => (!prvious))}}><NavLink to ="about">About me</NavLink></li>
+            <li onClick={()=>{setToggleNav(prvious => (!prvious))}}>
+              <NavLink to ="/">Home</NavLink>
+            </li>
+            <li onClick={()=>{setToggleNav(prvious => (!prvious))}}>
+              <NavLink to ="project">Projects</NavLink>
+              </li>
+            <li onClick={()=>{setToggleNav(prvious => (!prvious))}}>
+              <NavLink to ="about">About me</NavLink>
+            </li>
         </ul>
     </nav>
   )
