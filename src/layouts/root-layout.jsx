@@ -14,17 +14,17 @@ export default function RootLayout() {
         <footer className="flex justify-between">
             <div className="flex flex-col gap-3">
                 <a href="/">Home</a>
-                <a href="project">Projects</a>
+                <a href="project">My Projects</a>
                 <a href="about">About me</a>
             </div>
 
             <div className="flex flex-col gap-3">
-                <a href="/">Linkedin</a>
+                <a href="https://www.linkedin.com/in/suleman-lohar-1129a9136/">Linkedin</a>
                 <a href="/">Twitter</a>
             </div>
 
             <div className="flex flex-col gap-3">
-                <a href="/">Github</a>
+                <a href="https://github.com/legion40216">Github</a>
             </div>
         </footer>
     </div>

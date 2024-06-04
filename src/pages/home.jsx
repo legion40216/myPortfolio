@@ -48,7 +48,7 @@ export default function Home() {
             <div>
               <a href="project" 
               className=" w-max flex gap-2 hover:bg-slate-700 
-              p-2 px-3 rounded text-sm"
+              p-2 px-3 rounded text-sm border-[2px] border-slate-700"
               >
               <span>View all projects</span> 
               <MoveRight className="h-5 w-5"/>

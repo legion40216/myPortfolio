@@ -8,13 +8,19 @@ export default function Navbar({
     <nav>
         <ul className="flex gap-5">
             <li onClick={()=>{setToggleNav(prvious => (!prvious))}}>
-              <NavLink to ="/">Home</NavLink>
+              <NavLink to ="/">
+                Home
+              </NavLink>
             </li>
             <li onClick={()=>{setToggleNav(prvious => (!prvious))}}>
-              <NavLink to ="project">Projects</NavLink>
-              </li>
+              <NavLink to ="project">
+                My Projects
+              </NavLink>
+            </li>
             <li onClick={()=>{setToggleNav(prvious => (!prvious))}}>
-              <NavLink to ="about">About me</NavLink>
+              <NavLink to ="about">
+                About me
+              </NavLink>
             </li>
         </ul>
     </nav>

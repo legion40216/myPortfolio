@@ -13,7 +13,7 @@ export default function FeaturedCard({
     <div className="featured-card">
       <div className='flex flex-col sm:flex-row gap-4 justify-between'>
   
-        <div className='flex items-center w-full sm:max-w-[220px] '>
+        <div className='flex items-center sm:max-w-[220px] '>
           <div className='img-wrapper rounded overflow-hidden'>
               <a href={link ? link : "/"}  target="_blank" rel="noreferrer">
                 <img src={img} alt=""  />
