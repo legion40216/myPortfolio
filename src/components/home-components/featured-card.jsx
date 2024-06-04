@@ -33,7 +33,7 @@ export default function FeaturedCard({
               </p>
             </div>
 
-            <div className='flex gap-1'>
+            <div className='flex flex-wrap  gap-1'>
               { tech &&
                 tech.map((item, index)=>(
                 <span key={index} className="tags  text-sm bg-neutral-900 ">
