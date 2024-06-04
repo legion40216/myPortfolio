@@ -9,7 +9,8 @@ export default function Home() {
         
           <div className=" space-y-9">
             <div className='flex flex-col-reverse sm:flex-row gap-10 items-center'>
-              <div className=" space-y-4">
+
+              <div className=" text-center sm:text-start space-y-4">
                   <div>
                     <h1 className=" text-4xl font-bold">Suleman Lohar</h1>
                     <p>Fullstack Developer</p>
@@ -20,6 +21,7 @@ export default function Home() {
                     </p>
                   </div>
               </div>
+
               <div className='rounded-full overflow-hidden w-full sm: max-w-[300px]'>
                 <img src="https://github.com/shadcn.png" alt="" />
               </div>
