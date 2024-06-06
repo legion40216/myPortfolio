@@ -10,7 +10,10 @@ export default function FeaturedCard({
     tech,
 }) {
   return (
-    <div className="featured-card">
+    <div className="bg-gray-100 hover:hover:bg-gray-200
+    dark:bg-slate-700 dark:hover:bg-slate-600 
+    p-3 rounded-md
+    ">
       <div className='flex flex-col sm:flex-row gap-4 justify-between'>
   
         <div className='flex items-center sm:max-w-[220px] '>
@@ -36,7 +39,8 @@ export default function FeaturedCard({
             <div className='flex flex-wrap  gap-1'>
               { tech &&
                 tech.map((item, index)=>(
-                <span key={index} className="tags  text-sm bg-neutral-900 ">
+                <span key={index} className="tags text-sm 
+                dark:bg-neutral-900 bg-neutral-400 text-white ">
                   {item}
                 </span>
                 ))
@@ -46,12 +50,18 @@ export default function FeaturedCard({
 
         <div className='flex flex-row sm:flex-col gap-1'>
           <a href={github ? github : "/"} target="_blank" rel="noreferrer">
-              <div className='p-1 bg-slate-800 hover:bg-slate-700  rounded'>
+              <div className='
+              bg-gray-300 hover:bg-slate-300  
+              dark:bg-slate-800 dark:hover:bg-slate-700 
+              p-1 rounded'>
                   <Github className="h-5 w-5"/>
               </div>
           </a>
           <a href={link ? link : "/"} target="_blank" rel="noreferrer">
-              <div className='p-1 bg-slate-800 hover:bg-slate-700  rounded'>
+             <div className='
+              bg-gray-300 hover:bg-slate-300  
+              dark:bg-slate-800 dark:hover:bg-slate-700 
+              p-1 rounded'>
               <Link className="h-5 w-5"/>
               </div>
           </a>

@@ -3,6 +3,7 @@ import { MoveRight } from 'lucide-react';
 import FeaturedCard from "../components/home-components/featured-card";
 import { featuredCardData } from "../constants/featuredConstants";
 import { skillsData } from "../constants/skillsConstants";
+import { Link } from 'react-router-dom';
 
 export default function Home() {
   return (
@@ -13,11 +14,14 @@ export default function Home() {
               <div className=" text-center sm:text-start space-y-4">
                   <div>
                     <h1 className=" text-4xl font-bold">Suleman Lohar</h1>
-                    <p>Fullstack Developer</p>
+                    <p className=' font-medium'>Fullstack Developer</p>
                   </div>
                   <div>
-                    <p  className='text-sm'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae accusamus impedit ab provident quia laborum aut debitis suscipit porro 
-                      ipsum natus autem officia totam mollitia, animi amet officiis ratione dolor?
+                    <p  className='text-sm'>
+                    Hello! I'm <strong>Suleman Lohar</strong>, a passionate full-stack developer who loves 
+                    bringing ideas to life through code. I enjoy building web applications that 
+                    are not only functional but also delightful to use. 
+                    Check out some of my favorite projects below!
                     </p>
                   </div>
               </div>
@@ -46,13 +50,16 @@ export default function Home() {
             </div>
 
             <div>
-              <a href="project" 
-              className=" w-max flex gap-2 hover:bg-slate-700 
-              p-2 px-3 rounded text-sm border-[2px] border-slate-700"
+              <Link href="project" 
+              className=" 
+              hover:bg-gray-200 border-gray-200
+              dark:hover:bg-slate-700 dark:border-slate-700 
+              w-max flex gap-2 p-2 px-3 
+              rounded text-sm border-[2px]"
               >
               <span>View all projects</span> 
               <MoveRight className="h-5 w-5"/>
-              </a>
+              </Link>
             </div>
 
             <div className="space-y-4">
@@ -62,7 +69,7 @@ export default function Home() {
               <div className="flex gap-4 flex-wrap">
               {
                 skillsData.map((item, index)=>(
-                <span key={index} className="tags bg-slate-700  ">
+                <span key={index} className="tags dark:bg-slate-700 bg-gray-300  ">
                     {item.title}
                 </span>
                 ))
