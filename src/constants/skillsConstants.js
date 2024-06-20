@@ -24,7 +24,7 @@ export const skillsData = [
     title: "PHP"
     },
     {
-    title: "Phython"
+    title: "Python"
     },
     {
     title: "Mongodb"

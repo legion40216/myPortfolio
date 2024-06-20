@@ -50,7 +50,7 @@ export default function Home() {
             </div>
 
             <div>
-              <Link href="project" 
+              <Link to="project" 
               className=" 
               hover:bg-gray-200 border-gray-200
               dark:hover:bg-slate-700 dark:border-slate-700 
